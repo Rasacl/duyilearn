@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background: #081620;
+    color: #333;
+}
+
+.container{
+    background: #fff;
+    width: 400px;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-item{
+    margin-bottom: 10px;
+}
+/*搞定文本框的同一样式*/
+.txt{
+    outline: none;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 0 10px;
+    /*text-indent: 10px;*/
+}
+.txt:focus{
+    border-color: #5f8be8;
+}
+
+/*单独设置特殊情况*/
+select.txt{
+    height: 100px;
+    padding: 10px;
+}
+textarea.txt{
+    height: 100px;
+    padding: 10px;
+    /*设置多行文本框是否可以被用户改变尺寸*/
+    resize: none;
+}
+
+/*按钮统一样式*/
+button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    outline: none;
+    background: #5f8be8;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #759ae9;
+}
+/*选中禁用状态的按钮*/
+button:disabled{
+    background: #afc4f0;
+    cursor: not-allowed;
+}
+
+/*统一处理浮动*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*清除浮动*/
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.captcha .txt{
+    width: 170px;
+}
+.title{
+    margin-right: 10px;
+}
+.policy{
+    font-size: 12px;
+}
+.policy span{
+    vertical-align: 2px;
+}
+
+/*单选 多选的选中状态*/
+label{
+    cursor: pointer;
+}
+label span{
+    color:#aaa
+}
+label input:checked ~ span{
+    color: #333;
+}
+
+.txt::placeholder{
+    color: #ccc;
+}
+.txt:focus::placeholder{
+    color: #333;
+}

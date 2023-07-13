@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <form class="container">
+      <h1>用户注册</h1>
+      <div class="form-item">
+          <input class="txt" type="text" placeholder="请输入11位手机号" maxlength="11"/>
+      </div>
+      <div class="form-item clearfix captcha">
+          <input class="txt fl" type="text" placeholder="请输入验证码"/>
+          <button class="fr" type="button" disabled>发送验证码</button>
+      </div>
+      <div class="form-item">
+          <input class="txt" type="password" placeholder="请输入密码"/>
+      </div>
+      <div class="form-item">
+          <input class="txt" type="password" placeholder="请再次确认密码"/>
+      </div>
+      <div class="form-item">
+          <select multiple="multiple" class="txt" >
+              <option value="1">篮球</option>
+              <option value="2">足球</option>
+              <option value="3">乒乓球</option>
+              <option value="4">羽毛球</option>
+              <option value="5">排球</option>
+          </select>
+      </div>
+      <div class="form-item clearfix">
+          <div class="title fl">性别</div>
+          <div class="fl">
+              <label>
+                  <input type="radio" name="sex" checked>
+                  <span>男</span>
+              </label>
+              <label>
+                  <input type="radio" name="sex">
+                  <span>女</span>
+              </label>
+          </div>
+      </div>
+      <div class="form-item">
+          <textarea class="txt"  placeholder="请输入个人简介"></textarea>
+      </div>
+        <div class="form-item policy">
+            <label>
+                <input type="checkbox">
+                <span>我已阅读并同意《用户注册协议》</span>
+            </label>
+        </div>
+      <div class="form-item">
+            <button type="button" disabled>立即注册</button>
+            <button type="reset">重置表单</button>
+      </div>
+  </form>
+</body>
+</html>
