@@ -37,8 +37,8 @@ class Game {
 
     /**
      * 判断两个矩形是否碰撞
-     * @param {*} rec1 
-     * @param {*} rec2 
+     * @param {*} rec1
+     * @param {*} rec2
      */
     isHit(rec1, rec2) {
         // 横向：两个矩形的中心点的横向距离，是否小于矩形宽度之和的一半
