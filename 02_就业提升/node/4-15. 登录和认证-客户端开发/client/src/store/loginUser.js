@@ -30,7 +30,7 @@ export default {
       commit("setIsLoading", true);
       try {
         const resp = await loginServ.whoAmI();
-        commit("setData", resp.data);
+          ("setData", resp.data);
       } catch {
         commit("setData", null);
       }
